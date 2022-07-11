@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220711131820">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220711160600">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,7 +79,7 @@
 									<div class="calltoaction__decor">
 										<img src="img/svg/calltoaction-decor.svg" alt="img">
 									</div>
-									<buttoon class="calltoaction__btn" type="button">Book now</buttoon>
+									<buttoon class="calltoaction__btn" type="button" data-popup="#popup">Book now</buttoon>
 								</div>
 							</div>
 						</nav>
@@ -1001,17 +1001,122 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Close</button>
+				<div class="popup__body">
+					<div class="popup__title">Book a trip now</div>
+					<div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta hic eos, accusantium quo maiores placeat numquam quaerat, adipisci quasi saepe modi ad quibusdam magni, iste cum fugit alias nemo? Nam?</div>
+					<div class="popup__form">
+						<form class="form" action="" method="">
+							<div class="form__row">
+								<div class="form__input">
+									<input type="text" name="" placeholder="From:"></input>
+								</div>
+								<div class="form__input">
+									<input type="text" name="" placeholder="To:"></input>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__input _icon-calendar">
+									<input type="text" name="" placeholder="Date:" data-datepicker></input>
+								</div>
+								<div class="form__input form__select _icon-clock">
+									<select class="select" name="">
+										<option value="" selected hidden>Time:</option>
+										<option value="2">00:00 a.m.</option>
+										<option value="4">00:30 a.m.</option>
+										<option value="4">00:30 a.m.</option>
+										<option value="4">01:00 a.m.</option>
+										<option value="4">01:30 a.m.</option>
+										<option value="4">02:00 a.m.</option>
+										<option value="4">02:30 a.m.</option>
+										<option value="4">03:00 a.m.</option>
+										<option value="4">03:30 a.m.</option>
+										<option value="4">04:00 a.m.</option>
+										<option value="4">04:30 a.m.</option>
+										<option value="4">05:00 a.m.</option>
+										<option value="4">05:30 a.m.</option>
+										<option value="4">06:00 a.m.</option>
+										<option value="4">06:30 a.m.</option>
+										<option value="4">07:00 a.m.</option>
+										<option value="4">07:30 a.m.</option>
+										<option value="4">08:00 a.m.</option>
+										<option value="4">08:30 a.m.</option>
+										<option value="4">09:00 a.m.</option>
+										<option value="4">09:30 a.m.</option>
+										<option value="4">10:00 a.m.</option>
+										<option value="4">10:30 a.m.</option>
+										<option value="4">11:00 a.m.</option>
+										<option value="4">11:30 a.m.</option>
+										<option value="4">12:00 p.m.</option>
+										<option value="4">12:30 p.m.</option>
+										<option value="4">13:00 p.m.</option>
+										<option value="4">13:30 p.m.</option>
+										<option value="4">14:00 p.m.</option>
+										<option value="4">14:30 p.m.</option>
+										<option value="4">15:00 p.m.</option>
+										<option value="4">15:30 p.m.</option>
+										<option value="4">16:00 p.m.</option>
+										<option value="4">16:30 p.m.</option>
+										<option value="4">17:00 p.m.</option>
+										<option value="4">17:30 p.m.</option>
+										<option value="4">18:00 p.m.</option>
+										<option value="4">18:30 p.m.</option>
+										<option value="4">19:00 p.m.</option>
+										<option value="4">19:30 p.m.</option>
+										<option value="4">20:00 p.m.</option>
+										<option value="4">20:30 p.m.</option>
+										<option value="4">21:00 p.m.</option>
+										<option value="4">21:30 p.m.</option>
+										<option value="4">22:00 p.m.</option>
+										<option value="4">22:30 p.m.</option>
+										<option value="4">23:00 p.m.</option>
+										<option value="4">23:30 p.m.</option>
+									</select>
+								</div>
+								<div class="form__input form__select _icon-caret-down">
+									<select class="select" name="">
+										<option value="" selected hidden>PAX:</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+									</select>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__input _icon-plus-circle">
+									<input type="text" name="" placeholder="Add flight"></input>
+								</div>
+								<div class="form__input form__checkbox checkbox">
+									<label class="checkbox__label" for="">Round trip
+										<input class="checkbox__input" type="checkbox" name="" value="Round trip"></input>
+										<span class="checkbox__icon _icon-exchange"></span>
+									</label>
+
+								</div>
+								<button class="form__btn" type="submit">Next</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220711131820"></script>
+	<script src="js/app.min.js?_v=20220711160600"></script>
 </body>
 
 </html>
